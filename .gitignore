@@ -1,0 +1,139 @@
+# src: .gitignore
+# @(#) : main ignore settings: template
+#
+# Copyright (c) 2026- atsushifx <http://github.com/atsushifx>
+#
+# This software is released under the MIT License.
+# https://opensource.org/licenses/MIT
+
+# default: ignore all files
+*
+
+## Repository Specific
+
+## General
+# Allow README, LICENSE, CONTRIBUTING
+!**/README*
+!**/LICENSE*
+!**/CONTRIBUTING*
+
+# Allow .github directories
+!.github/
+!.github/**
+
+# Allow other ignore
+!*ignore
+
+# Allow editorconfig
+!**/.editorconfig
+
+# Allow settings
+!**/settings.json
+
+
+## Root configs
+!/*.json
+!/*.jsonc
+!/*.yml
+!/*.yaml
+!/*.toml
+!/*.mjs
+!.textlint/
+!.textlint/**
+!.textlint/**/*.yml
+
+
+
+## Project directories
+# # scripts
+!/scripts
+!/scripts/**
+!/scripts/**/*.sh
+!/scripts/**/*.ts
+
+## AI Agents
+# General
+!**/AGENTS.md
+
+# claude code
+!**/CLAUDE*.md
+
+# allowlist details: .claude/.gitignore
+!.claude/
+!**/CLAUDE*.md
+!.claude/
+!.claude/agents/
+!.claude/agents/**
+!.claude/rules/
+!.claude/rules/**
+!.claude/commands/
+!.claude/commands/**
+
+##  Editor
+#   VSCode
+!.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+!.vscode/cspell*
+!.vscode/cspell*/**
+
+
+##  Git
+# allow all gitignore
+!**/.gitignore
+
+
+## ------------------------------------------------------------ ##
+##  Re-exclude: secrets and generated files                      ##
+##  Must stay last: these rules undo the broad allow rules above ##
+## ------------------------------------------------------------ ##
+
+#   OS specific files
+.DS_Store
+thumbs.db
+
+#   logs, patches
+**/*.log
+**/*.diff
+**/*.patch
+
+#   history, cache
+**/.history/
+**/.cache/
+
+#   backup/swap/temp
+**/$~*
+**/~*
+**/*~
+**/*.tmp
+**/*.swp
+**/*.lock
+
+#   session files
+**/*session.json
+**/*session
+
+#   .env files
+**/.env*
+!.env.example
+
+
+#   API keys / credentials
+**/*.key
+**/*.pem
+**/*.p12
+**/*.pfx
+**/*apikey*
+**/*api-key*
+**/*api_key*
+
+#   temporary directories
+**/temp
+**/tmp
+
+#   node
+**/node_modules/
+**/.pnpm-store/
