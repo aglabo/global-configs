@@ -12,7 +12,7 @@
 profile: default
 
 # Online
-online: false
+online: true  # for CI
 
 # Set the level of a rule by its ID: "error" (fails the run), "warn", "info" or
 # "off". A rule with options takes a mapping.
