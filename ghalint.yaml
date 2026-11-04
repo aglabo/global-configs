@@ -1,11 +1,15 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/suzuki-shunsuke/ghalint/main/json-schema/ghalint.json
 # src: ./configs/ghalint.yaml
 # @(#) : ghalint configuration file
 #
-# Copyright (c) 2025 atsushifx <https://github.com/atsushifx>
+# Copyright (c) 2026- atsushifx <https://github.com/atsushifx>
 #
 # This software is released under the MIT License.
 # https://opensource.org/licenses/MIT
 
+# yaml-language-server: $schema=https://raw.githubusercontent.com/suzuki-shunsuke/ghalint/main/json-schema/ghalint.json
+
 # Exclude specific policies if needed
-excludes: []
+excludes:
+  # Reusable workflows can't be locked by actions.lock; pin by tag (aglabo/ci-platform is first-party)
+  - policy_name: action_ref_should_be_full_length_commit_sha
+    action_name: aglabo/ci-platform/.github/workflows/*
