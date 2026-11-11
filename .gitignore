@@ -30,7 +30,6 @@
 # Allow settings
 !**/settings.json
 
-
 ## Root configs
 !/*.json
 !/*.jsonc
@@ -42,6 +41,9 @@
 !.textlint/**
 !.textlint/**/*.yml
 
+!/cSpell/
+!/cSpell/**
+!/cSpell/**/*.dic
 
 
 ## Project directories
