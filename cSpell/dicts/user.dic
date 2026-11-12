@@ -67,6 +67,7 @@ RGR
 SCRIPTSDIR
 sdd
 secretlint
+jactionlint
 sed
 setgid
 setlocal
