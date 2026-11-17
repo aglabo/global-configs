@@ -37,6 +37,7 @@
 !/*.yaml
 !/*.toml
 !/*.mjs
+!/*rc
 !.textlint/
 !.textlint/**
 !.textlint/**/*.yml
