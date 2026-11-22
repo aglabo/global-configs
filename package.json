@@ -1,0 +1,24 @@
+{
+  "name": "@aglabo/project-starter-template",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Development environment for project-starter-template",
+  "keywords": [
+    "template",
+    "starter",
+    "oss",
+    "development"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atsushifx/project-starter-template.git"
+  },
+  "license": "MIT",
+  "author": "atsushifx",
+  "type": "module",
+  "packageManager": "pnpm@12.21.0",
+  "engines": {
+    "pnpm": ">=12"
+  },
+  "@(#)": "project-starter-template: template for new project development"
+}
